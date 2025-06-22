@@ -1,16 +1,22 @@
 import './App.css'
-import Navbar from './components/Navbar'
-import HeroSection from './components/Herosection'
-import Footer from './components/Footer'
-import ApiCarousel from './components/ApiCarousle'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from "./pages/Home"
+import APOD from './pages/APOD';
+import NasaMediaSearch from './pages/NasaMediaSearch';
+import Neows from './pages/Neows';
+
 function App() {
 
   return (
     <>
-      <Navbar /> 
-      <HeroSection />
-      <ApiCarousel />
-      <Footer /> 
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/APOD" element={<APOD  />} />
+          <Route path="/NasaMediaSearch" element={<NasaMediaSearch  />} />
+          <Route path="/Neows" element={<Neows  />} />
+        </Routes>
+      </Router>
     </>
   )
 }
