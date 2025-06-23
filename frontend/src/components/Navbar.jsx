@@ -17,6 +17,7 @@ const Navbar = () => {
           <a href="#features" className="hover:text-[#0A64F6]"><b><Link to="/APOD">APOD</Link></b></a>
           <a href="#about" className="hover:text-[#0A64F6]"><b><Link to="/NasaMediaSearch">Image & Video Lib</Link></b></a>
           <a href="#contact" className="hover:text-[#0A64F6]"><b><Link to="/Neows">Neows</Link></b></a>
+          <a href="#contact" className="hover:text-[#0A64F6]"><b><Link to="/EpicViewer">EPIC</Link></b></a>
         </div>
 
         <div className="md:hidden">

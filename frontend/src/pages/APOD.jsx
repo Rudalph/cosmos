@@ -17,7 +17,9 @@ function APODForm() {
     e.preventDefault();
     setLoading(true);
     setResults([]);
-    let url = "http://localhost:5000/api/apod?";
+    //https://cosmos-iuck.onrender.com
+    // http://localhost:5000/
+    let url = "https://cosmos-iuck.onrender.com/api/apod?";
     const params = [];
 
     if (queryType === "date" && date) params.push(`date=${date}`);
