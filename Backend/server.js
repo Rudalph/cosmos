@@ -21,7 +21,7 @@ app.use('/api', keepAlikeRouter);
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
 
 
-const SELF_URL = 'https://your-render-url.onrender.com/api/ping'; // Replace with your actual deployed URL
+const SELF_URL = 'https://cosmos-iuck.onrender.com/api/'; // Replace with your actual deployed URL
 
 setInterval(() => {
   axios.get(SELF_URL)
